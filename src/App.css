@@ -17,9 +17,37 @@
   }
 }
 
+.containerPage {
+  flex: 1;
+  height:100vh;
+}
+
+.containerTechList {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+  column-gap: 4vh;
+  margin-bottom: 7vh;
+}
+
+.containerTech {
+  display: flex;
+  flex-direction: row;
+  place-content: center;
+}
+
+.iconTeck {
+  width: 40px;
+  height: 40px;
+}
+
+.center-text {
+  align-content: center;
+}
+
 .hero {
   position: relative;
-
+  margin-top: 5vh;
   .base,
   .framework,
   .vite {

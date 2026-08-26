@@ -1,33 +1,45 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
+import programming from './assets/programming.png'
 import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
+import terraform from './assets/terraform.svg'
+import nodejsLogo from './assets/nodejsIconWhite.svg'
+import aws from './assets/aws.svg'
+import github from './assets/GitHub_Invertocat_White.svg'
+import linkedin from './assets/linkedin.png'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
+    <div className='containerPage'>
       <section id="center">
         <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
+          <img src={programming} className="base" width="170" height="170" alt="" />
         </div>
         <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.tsx</code> and save to test <code>HMR</code>
-          </p>
+          <h1>Tiago</h1>
+          <h2>
+            Full-stack developer
+          </h2>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+        <div className='containerTechList'>
+          <div className='containerTech'>
+            <img src={nodejsLogo} className="iconTeck" alt="nodejs logo" />
+            <p className='center-text'>NodeJs</p>
+          </div>
+          <div className='containerTech'>
+            <img src={reactLogo} className="iconTeck" alt="react logo" />
+            <p className='center-text'>React</p>
+          </div>
+          <div className='containerTech'>
+            <img src={terraform} className="iconTeck" alt="terraform logo" />
+            <p className='center-text'>Terraform</p>
+          </div>
+          <div className='containerTech'>
+            <img src={aws} className="iconTeck" alt="aws logo" />
+            <p className='center-text'>AWS</p>
+          </div>
+        </div>
+
       </section>
 
       <div className="ticks"></div>
@@ -37,19 +49,12 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#documentation-icon"></use>
           </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
+          <h2>Game</h2>
+          <p>Game developed with PhaserJs</p>
           <ul>
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
+              <a href="https://tiagoumemura.github.io/game/" target="_blank">
+                Play
               </a>
             </li>
           </ul>
@@ -58,64 +63,25 @@ function App() {
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+          <h2>Connect</h2>
+          <p>Github and Linkedin</p>
           <ul>
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
+              <a href="https://github.com/TiagoUmemura" target="_blank">
+                <img src={github} className="iconTeck" alt="github logo" />
                 GitHub
               </a>
             </li>
             <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
+              <a href="https://www.linkedin.com/in/tiago-kenji-umemura/" target="_blank">
+                <img src={linkedin} className="iconTeck" alt="linkedin logo" />
+                Linkedin
               </a>
             </li>
           </ul>
         </div>
       </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
-    </>
+    </div>
   )
 }
 
