@@ -4,14 +4,21 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Created using npm create vite@latest my-app -- --template react-ts
 
+npm install
+npm run dev
+
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Deployment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Deployed to https://tiagoumemura.github.io/new-profile/
+
+- In vite.config.ts, base: "/new-profile" since the deployment URL path contains "new-profile"
+- run npm run build
+- copy all content from /dist and upload to github.io repository, inside the new-profile folder
 
 ## Expanding the ESLint configuration
 
